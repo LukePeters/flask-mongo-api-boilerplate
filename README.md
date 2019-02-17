@@ -29,4 +29,4 @@ You can refresh the `AccessToken` when it returns as expired by submitting a req
 
 ## Notes
 
-Please excuse the brief instructions. I've only run this in my own environment (MacOS, Python 3.7, MongoDB 4.0.4, pipenv 2018.11.14) so it may not run out of the box on your computer, but I'd be happy to help debug if you get stuck. Reach out on Twitter [@MoonlightLuke](https://twitter.com/MoonlightLuke)
+Please excuse the brief instructions. I've only run this in my own environment (MacOS, Python 3.7, MongoDB 4.0.4, pipenv 2018.11.14) so it may not run out of the box on your computer, but I'd be happy to help debug if you get stuck. Reach out to me on Twitter: [@MoonlightLuke](https://twitter.com/MoonlightLuke)
