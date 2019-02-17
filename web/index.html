@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-End App</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- Add User Form -->
+    <div class="app-panel">
+    
+      <h3 class="centered">Add User</h3>
+
+      <form id="add-user-form">
+
+        <label for="first_name" class="input-label">First Name</label>
+        <input type="text" name="first_name" id="first_name" class="input-field" required>
+
+        <label for="last_name" class="input-label">Last Name</label>
+        <input type="text" name="last_name" id="last_name" class="input-field" required>
+        
+        <label for="email" class="input-label">Email Address</label>
+        <input type="email" name="email" id="email" class="input-field" required>
+
+        <label for="password" class="input-label">Password</label>
+        <input type="password" name="password" id="password" class="input-field" required>
+
+        <div class="centered">
+          <input type="submit" value="Submit" class="btn">
+        </div>
+        
+      </form>
+
+      <div id="add-user-success" class="success-message">
+        User successfully added!
+      </div>
+
+    </div>
+
+    <!-- Add User Form -->
+    <div class="app-panel">
+    
+      <h3 class="centered">Add User</h3>
+
+      <form id="login-form">
+
+        <label for="email" class="input-label">Email Address</label>
+        <input type="email" name="email" id="email" class="input-field" required>
+
+        <label for="password" class="input-label">Password</label>
+        <input type="password" name="password" id="password" class="input-field" required>
+
+        <div class="centered">
+          <input type="submit" value="Submit" class="btn">
+        </div>
+        
+      </form>
+
+      <div id="login-success" class="success-message">
+        User successfully authenticated!
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script src="jquery.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Config files are not tracked in Git and must be placed manually in each
+# app environment (e.g. development, staging, production).
+
+# General
+DEBUG = True
+TIMEZONE = "US/Eastern"
+SECRET_KEY = ""
+ENVIRONMENT = "development"
+FLASK_DIRECTORY = "##FLASK_DIRECTORY##"
+FLASK_DOMAIN = "##FLASK_DOMAIN##"
+FLASK_PORT = ##FLASK_PORT##
+FRONTEND_DOMAIN = "##FRONTEND_DOMAIN##"
+HTTP_HTTPS = "http://"
+
+# Database
+MONGO_HOSTNAME = "##MONGO_HOSTNAME##"
+MONGO_PORT = 27017
+MONGO_AUTH_DATABASE = ""
+MONGO_AUTH_USERNAME = ""
+MONGO_AUTH_PASSWORD = ""
+MONGO_APP_DATABASE = "##MONGO_APP_DATABASE##"
