@@ -1,16 +1,27 @@
+from flask import current_app as app
+from pytz import timezone, UTC
+from datetime import timedelta
+import time, datetime
 import random
-import time
+import uuid
 
-def nowEpoch():
-	return int(time.time()) * 1000
+def nowDatetimeUserTimezone(user_timezone):
+	tzone = timezone(user_timezone)
+	return datetime.datetime.now(tzone)
+
+def nowDatetimeUTC():
+	tzone = UTC
+	now = datetime.datetime.now(tzone)
+	return now
 
 def JsonResp(data, status):
 	from flask import Response
+	from bson import json_util
 	import json
-	return Response(json.dumps(data), mimetype="application/json", status=status)
+	return Response(json.dumps(data, default=json_util.default), mimetype="application/json", status=status)
 
 def randID():
-	randId = randString(3) + randString(3) + randString(3) + randString(3) + randString(3) + randString(3)
+	randId = uuid.uuid4().hex
 	return randId
 
 def randString(length):

@@ -1,6 +1,5 @@
 ## Requirements
  
-- Pipenv
 - MongoDB
 - Python 3 (defaults to Python 3.7, but you can change this in the Pipfile before setup)
 
@@ -8,14 +7,14 @@
 
 1. Clone this repo to your local web server
 2. `cd` into the directory within the terminal
-3. Run `./setup.sh` to setup pipenv and configure the Flask app
+3. Run `./setup` to setup pipenv and configure the Flask app
 
 Here's a quick video of the setup process (no audio): [flask-mongo-api-boilerplate-setup.mp4](https://img.lukepeters.me/flask-mongo-api-boilerplate-setup.mp4)
 
 ## Running the app
 
 1. Run `pipenv shell` to activate the virtual environment
-2. Run `./run.sh` to start the Flask application
+2. Run `./run` to start the Flask application
 
 ## Further configuration
 

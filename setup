@@ -28,6 +28,7 @@ EOF
 
 echo "${BLUE}VIRTUAL ENVIRONMENT SETUP${NC}"
 echo
+pip install pipenv
 pipenv install
 echo
 
@@ -100,5 +101,5 @@ echo
 echo "To start the Flask app run these two commands:"
 echo
 echo "${GREY}> ${NC}pipenv shell"
-echo "${GREY}> ${NC}./run.sh"
+echo "${GREY}> ${NC}./run"
 echo

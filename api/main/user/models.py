@@ -13,12 +13,11 @@ class User:
       "id": tools.randID(),
       "ip_addresses": [request.remote_addr],
       "acct_active": True,
-      "date_created": tools.nowEpoch(),
-      "last_login": tools.nowEpoch(),
+      "date_created": tools.nowDatetimeUTC(),
+      "last_login": tools.nowDatetimeUTC(),
       "first_name": "",
       "last_name": "",
-      "email": "",
-      "plan": "free"
+      "email": ""
     }
   
   def get(self):
@@ -66,7 +65,7 @@ class User:
 
         app.db.users.update({ "id": user["id"] }, { "$set": {
           "refresh_token": refresh_token,
-          "last_login": tools.nowEpoch()
+          "last_login": tools.nowDatetimeUTC()
         } })
 
         resp = tools.JsonResp({
