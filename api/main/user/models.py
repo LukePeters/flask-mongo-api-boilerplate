@@ -17,7 +17,8 @@ class User:
       "last_login": tools.nowDatetimeUTC(),
       "first_name": "",
       "last_name": "",
-      "email": ""
+      "email": "",
+      "plan": "basic"
     }
   
   def get(self):

@@ -54,8 +54,8 @@ read -p "Flask App Port [$FLASK_PORT_DEFAULT]: " FLASK_PORT
 FLASK_PORT=${FLASK_PORT:-$FLASK_PORT_DEFAULT}
 echo
 
-# URL of the front-end JavaScript application
-read -p "Front-End Base URL, port included (e.g. http://localhost, http://localhost:3000): " FRONTEND_DOMAIN
+# Domain of the front-end JavaScript application
+read -p "Front-End Domain, port included (e.g. http://localhost, http://localhost:3000): " FRONTEND_DOMAIN
 echo
 
 # MongoDB hostname
