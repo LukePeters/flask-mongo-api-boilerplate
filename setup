@@ -29,7 +29,7 @@ EOF
 echo "${BLUE}VIRTUAL ENVIRONMENT SETUP${NC}"
 echo
 pip install pipenv
-pipenv install
+pipenv install --python=$(which python3)
 echo
 
 # FLASK SETUP
